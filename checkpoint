@@ -1,0 +1,2 @@
+model_checkpoint_path: "toydata_weights"
+all_model_checkpoint_paths: "toydata_weights"

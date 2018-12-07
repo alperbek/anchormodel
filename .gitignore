@@ -1,0 +1,15 @@
+# Ignore Toy Data
+ToyDataShapes/
+
+# Ignore Checkpoint Files
+*.ckpt*
+checkpoints/
+
+# Ignore VSCode
+.vscode/
+
+.pyc
+.__pycache_
+
+
+
