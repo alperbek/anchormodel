@@ -35,7 +35,7 @@ y_ = tf.placeholder("float", shape=[None, 10])   #Batchsize x 10 (one hot encode
 
 
 dataSet = MatterportDataset3DBBOX(shuffle=True, batch_size=batch_size)
-images,bboxes,classes,num_instance = dataSet.nextBatch()
+
 images = ((tf.reshape(images,[batch_size,28*28]))/255.0)
 # First hidden layer
 W_fc1 = weights([28*28, 500])
@@ -89,6 +89,7 @@ with tf.Session() as sess:
         #print(batch_xs.shape)
         dd=sess.run([cost])
         print('Test run after starting {}'.format(dd))
+        
         
         for epoch in range(runs):
                 avg_cost=0
